@@ -1,0 +1,36 @@
+name: modu-gyeot
+services:
+  ocr:
+    build: ./services/ocr
+    ports:
+      - "127.0.0.1:8767:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 64
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: gyeot
+      POSTGRES_DB: gyeot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gyeot -d gyeot"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+volumes:
+  postgres-data:

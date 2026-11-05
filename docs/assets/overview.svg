@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">곁 GYEOT — 함께 확인해요</title>
+  <desc id="desc">사진 속 문구 확인, 공식 기록 선택, AI 비교 초안의 세 단계로 이루어진 곁 서비스 소개 이미지. 실제 서비스 화면이 아닌 개념도입니다.</desc>
+  <rect width="1200" height="480" rx="24" fill="#FAF6F0"/>
+  <g font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif">
+    <text x="64" y="92" font-size="48" font-weight="800" fill="#1F4FA3">곁</text>
+    <text x="130" y="89" font-size="22" letter-spacing="5" fill="#4A4F55">GYEOT</text>
+    <text x="64" y="164" font-size="38" font-weight="700" fill="#1A1C1E">광고 앞에서, 혼자 고민하지 않도록.</text>
+    <text x="64" y="205" font-size="22" fill="#4A4F55">공식 근거를 함께 확인하는 AI 소비 동행 서비스</text>
+    <g fill="#FFFFFF" stroke="#E6DED2" stroke-width="2">
+      <rect x="64" y="250" width="330" height="142" rx="18"/>
+      <rect x="435" y="250" width="330" height="142" rx="18"/>
+      <rect x="806" y="250" width="330" height="142" rx="18"/>
+    </g>
+    <g font-size="18" font-weight="700" fill="#A5521F">
+      <text x="90" y="287">01 · 확인</text><text x="461" y="287">02 · 근거</text><text x="832" y="287">03 · 비교</text>
+    </g>
+    <g font-size="25" font-weight="700" fill="#1A1C1E">
+      <text x="90" y="328">사진 속 문구 읽기</text><text x="461" y="328">공식 제품 기록 선택</text><text x="832" y="328">AI 비교 초안 확인</text>
+    </g>
+    <g font-size="18" fill="#4A4F55">
+      <text x="90" y="363">로컬 OCR · 사용자 수정</text><text x="461" y="363">기능성 원문 · 출처 확인</text><text x="832" y="363">별도 동의 · 판단은 신중하게</text>
+    </g>
+    <g stroke="#1F4FA3" stroke-width="3" fill="none"><path d="M403 320h22m-8-8 8 8-8 8"/><path d="M774 320h22m-8-8 8 8-8 8"/></g>
+    <text x="64" y="440" font-size="17" fill="#4A4F55">서비스 흐름 개념도 · 법적 판정이나 의학적 안전성 판단을 제공하지 않습니다.</text>
+  </g>
+</svg>
